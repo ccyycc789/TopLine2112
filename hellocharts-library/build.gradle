@@ -1,0 +1,29 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.itheima.hellocharts_library'
+    compileSdk 34
+    buildToolsVersion '34.0.0'
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    dependencies {
+        implementation 'androidx.core:core:1.9.0'
+        implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+        implementation 'androidx.viewpager:viewpager:1.1.0'
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    }
+    buildFeatures {
+        buildConfig = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    defaultConfig {
+        targetSdk 34
+        minSdk 24  // 修改为 25 或更高
+    }
+}
