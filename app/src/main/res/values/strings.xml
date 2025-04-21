@@ -13,4 +13,6 @@
         以下是薪资的高低所占的比例饼状图：</string>
     <string name="java_count_text">以下是JavaEE工程师不同工作经验对应的不同薪资情况，
         具体如折线图与柱状图所示：</string>
+    <string name="definition">清晰度</string>>
+    <string name="speed">倍速</string>
 </resources>

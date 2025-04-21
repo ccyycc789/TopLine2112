@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.itheima.topline.adapter.MyFragmentPagerAdapter;
 import com.itheima.topline.fragment.CountFragment;
 import com.itheima.topline.fragment.HomeFragment;
+import com.itheima.topline.fragment.VideoFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,9 +62,11 @@ public class MainActivity extends AppCompatActivity {
 
         HomeFragment homeFragment = new HomeFragment();
         CountFragment countFragment = new CountFragment();
+        VideoFragment videoFragment = new VideoFragment();
         List<Fragment> alFragment = new ArrayList<>();
         alFragment.add(homeFragment);
         alFragment.add(countFragment);
+        alFragment.add(videoFragment);
 
         //ViewPager设置适配器
         viewPager.setAdapter(new MyFragmentPagerAdapter(getSupportFragmentManager(), alFragment));
